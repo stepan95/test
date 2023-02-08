@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Kotta One Regular";
+  src: url("../fonts/KottaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-VariableFont_wght.ttf");
+}
+html {
+    padding: 0;
+    margin: 0;    
+}
+body {
+	font-family: "Kotta One Regular", "El Messiri";
+	text-align: center;
+	user-select: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#schedule {
+    border: 3px solid #a6f4d4;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button {
+	display: block;
+    background: #2633b4;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #a6f4d4;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+.button:hover {
+    background: #0a0f40;
+}
+
+.question {
+    border: 3px solid #a6f4d4;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 3px 3px 6px #7f7f7f;
+    position: relative;
+}
+
+.question span {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center; 
+    font-weight: 700;   
+    color: black;
+}
+
+.question p{
+    color: #2633b4;
+    padding: 5px;
+    margin: 7px 50px 7px 7px;
+    border-radius: 7px;
+    text-align: justify;
+    transition: all 1s;
+}
+.question p:hover {
+	background: #d4f9ea;
+	cursor: pointer;
+}
+.active {
+    background: #a6f4d4;	
+}
+
+.backgroundWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000ad;
+    z-index: 10;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.backgroundWindow .window{
+    background: #FFF;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.backgroundWindow .window h1{
+    
+}
+
+#scheduleWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    min-height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+#scheduleWindow div {
+    display: block;
+    width: 50%;
+}
+
+#personalInformation {
+    opacity: 1;
+    visibility: visible;
+}
+
+input{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    transition: all 2s;
+    border-bottom: 2px solid #a6f4d4;
+    width: 80%;
+}
+
+input:focus-visible {
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
